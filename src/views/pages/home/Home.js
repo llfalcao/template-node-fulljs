@@ -1,17 +1,24 @@
-let Home = {
-  is_private: false,
+import HomeSectionOne from '../../components/sections/homeSectionOne'
+import HomeSectionTwo from '../../components/sections/homeSectionTwo';
+import floatImage from '../../components/float/floatImage';
 
-  render: async () => {
-      let view = `
+let Home = {
+    is_private: false,
+
+    render: async() => {
+        let view = `
           <div>
             <h1>Home</div>
+            ${HomeSectionOne}
+            ${HomeSectionTwo}
+            ${floatImage}
           </div>
       `;
 
-      return view
-  },
+        return view
+    },
 
-  after_render: async () => {}
+    after_render: async() => {}
 }
 
 export default Home;
