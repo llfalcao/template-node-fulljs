@@ -4,9 +4,13 @@
     "description": "Template FullJS",
     "main": "index.js",
     "scripts": {
-        "test": "git-bash run_test.sh",
-        "start": "git-bash run_sass.sh",
-        "build": "git-bash run_build.sh"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "npm-run-all -p watch-css webpack-serve",
+        "build": "npm-run-all -p build-css webpack",
+        "watch-css": "node-sass --watch src/assets/sass/style.scss -o src/css/style.css",
+        "build-css": "node-sass src/assets/sass/style.scss -o src/css/style.css",
+        "webpack": "webpack --config webpack.prod.js",
+        "webpack-serve": "webpack serve --open --config webpack.dev.js"
     },
     "keywords": [],
     "author": "Douglas Morais",
@@ -14,7 +18,7 @@
     "dependencies": {
         "axios": "^0.21.1",
         "clean-webpack-plugin": "^3.0.0",
-        "node-sass": "^5.0.0",
+        "node-sass": "^6.0.1",
         "sweetalert2": "^10.15.5",
         "webpack": "^5.21.1",
         "webpack-dev-server": "^3.11.2",

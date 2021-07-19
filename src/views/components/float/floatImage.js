@@ -1,4 +1,4 @@
-import babyYoda from '../../../assets/images/elements/baby-yoda.png';
+import babyYoda from "../../../assets/images/elements/baby-yoda.png";
 
 let floatImage = `
     <div class="main-left">

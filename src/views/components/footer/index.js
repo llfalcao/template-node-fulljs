@@ -1,4 +1,4 @@
-import planet from '../../../assets/images/elements/planet.png';
+import planet from "../../../assets/images/elements/planet.png";
 
 let footer = `
     <div class="container footer-contain">

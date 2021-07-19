@@ -1,1 +1,0 @@
-node-sass src/assets/sass/style.scss > src/css/style.css && webpack --config webpack.prod.js
