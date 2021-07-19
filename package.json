@@ -7,8 +7,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "npm-run-all -p watch-css webpack-serve",
         "build": "npm-run-all -p build-css webpack",
-        "watch-css": "node-sass --watch src/assets/sass/style.scss -o src/css/style.css",
-        "build-css": "node-sass src/assets/sass/style.scss -o src/css/style.css",
+        "watch-css": "node-sass --watch ./src/assets/sass/style.scss -o src/css",
+        "build-css": "node-sass ./src/assets/sass/style.scss -o src/css",
         "webpack": "webpack --config webpack.prod.js",
         "webpack-serve": "webpack serve --open --config webpack.dev.js"
     },
