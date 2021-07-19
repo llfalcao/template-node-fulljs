@@ -10,12 +10,14 @@ let textContent = `
 
 let homeSectionTwo = `
     <section id="section-two" class="section background--two" style="background-image: url(${backgroundTwo})">
-        <div class="container block-section--two">
-            <img src="${darthVader}" alt="Darth Vader" width="300px" height="auto">
-            <div "text-block--two">
-                <p>    
-                    ${textContent}
-                </p>
+        <div class="container block-section">
+            <div class="block-section--two">
+                <img src="${darthVader}" alt="Darth Vader">
+                <div class="text-block--two">
+                    <p>    
+                        ${textContent}
+                    </p>
+                </div>
             </div>
         </div>
         <div class="block-section">

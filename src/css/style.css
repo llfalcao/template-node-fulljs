@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  background: #000;
-  color: #fff;
+    background: #000;
+    color: #fff;
 }
 
 h1,
@@ -21,84 +21,110 @@ h5,
 p,
 b,
 span {
-  font-family: "Roboto";
+    font-family: "Roboto";
 }
 
 .container {
-  width: 75%;
-  margin: 0 auto;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .block-section {
-  display: block;
+    display: block;
 }
 
 .main-left {
-  position: fixed;
-  left: 10px;
-  bottom: 10px;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
 }
 
 .footer-contain {
-  margin-top: calc(10px-220px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Roboto";
+    margin-top: calc(10px-220px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto";
 }
 
 .section {
-  width: 100%;
-  font-family: "Roboto";
+    width: 100%;
+    font-family: "Roboto";
 }
 
 .background--one {
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .background--one .block-section--one {
-  width: 100%;
-  display: block;
-  text-align: center;
+    width: 100%;
+    display: block;
+    text-align: center;
 }
 .background--one .block-section--one h1 {
-  font-weight: 400;
-  font-size: 22px;
-  margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 32px;
+}
+.background--one .block-section--one img {
+    transition: 0.5s;
+}
+.background--one .block-section--one img:hover {
+    width: 350px;
+    transition: 0.5s;
 }
 
 .background--two {
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  height: 120vh;
-  display: flex;
-  flex-direction: column;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
 }
 .background--two .footer-contain {
-  margin-top: calc(10px-220px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Roboto";
+    margin-top: calc(10px-220px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto";
 }
 .background--two .block-section--two {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 .background--two .block-section--two .text-block--two {
-  width: 40%;
-  height: 100%;
+    width: 40%;
+    margin-left: 80px;
 }
-.background--two .block-section--two .text-block--two img {
-  margin: 90px 0 0 90px;
+.background--two .block-section--two img {
+    width: 300px;
+    height: auto;
+    margin: 90px 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 600px) {
+    .background--two {
+        height: 1200px;
+    }
+    .background--two .block-section--two {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .background--two .block-section--two .text-block--two {
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+    }
+    .background--two .block-section--two img {
+        margin: 40px auto;
+    }
+}
