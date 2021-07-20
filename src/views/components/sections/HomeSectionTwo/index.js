@@ -1,6 +1,6 @@
 import backgroundTwo from "../../../assets/images/background/bg-2.jpg";
 import darthVader from "../../../assets/images/elements/vader.png";
-import footer from "../../components/footer/index";
+import footer from "../../footer/index";
 
 let textContent = `
     Lucas ipsum dolor sit amet luke sidious jango cade mace palpatine jawa wookiee wookiee kashyyyk. Dantooine calrissian r2-d2 calamari coruscant skywalker ewok. Darth fett moff endor twi'lek windu obi-wan luuke. Alderaan hutt hoth moff zabrak moff organa calamari. Ackbar mustafar wedge padmé mandalorians solo secura moff jar. Jawa luuke hutt organa jango jinn. Boba jabba kenobi moff luuke qui-gonn thrawn. Twi'lek yoda mace luke vader boba. Mace kessel darth antilles jabba. Luke hoth organa leia anakin skywalker leia ponda.
@@ -20,7 +20,7 @@ let homeSectionTwo = `
                 </div>
             </div>
         </div>
-        <div class="block-section">
+        <div class="block-section--footer">
             ${footer}
         </div>
     </section>

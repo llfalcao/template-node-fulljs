@@ -1,5 +1,5 @@
-import homeSectionOne from "../../components/sections/homeSectionOne";
-import homeSectionTwo from "../../components/sections/homeSectionTwo";
+import HomeSectionOne from "../../components/sections/HomeSectionOne";
+import HomeSectionTwo from "../../components/sections/HomeSectionTwo";
 import floatImage from "../../components/float/floatImage";
 
 let Home = {
@@ -8,8 +8,8 @@ let Home = {
     render: async () => {
         let view = `
           <div>
-            ${homeSectionOne}
-            ${homeSectionTwo}
+            ${HomeSectionOne}
+            ${HomeSectionTwo}
             ${floatImage}
           </div>
       `;

@@ -5,6 +5,7 @@ $fontFamilyDefault: "Roboto";
 * {
     margin: 0;
     padding: 0;
+    // box-sizing: border-box;
 }
 
 html {
@@ -40,6 +41,17 @@ span {
     position: fixed;
     left: 10px;
     bottom: 10px;
+
+    & img {
+        width: 120px;
+        height: "auto";
+        transition: 0.5s;
+    }
+
+    & img:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 .footer-contain {
