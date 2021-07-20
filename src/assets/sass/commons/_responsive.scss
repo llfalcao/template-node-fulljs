@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .main-left {
         transform: scale(0.9);
     }
@@ -29,16 +29,15 @@
         }
 
         .block-section--footer {
-            margin-top: 40px;
-
             .footer-contain {
-                width: 100%;
-                justify-content: flex-end;
-                margin-left: 30%;
+                justify-content: center;
+                align-items: center;
 
                 & p {
-                    min-width: 150px;
-                    padding-left: 0;
+                    min-width: 140px;
+                    padding-left: 100px;
+                    padding-right: 10px;
+                    font-size: 0.9rem;
                 }
 
                 & img {
